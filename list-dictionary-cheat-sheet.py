@@ -148,3 +148,22 @@ for key, val in my_dictionary.items():
 # python ----> a big snake
 # cat ----> a fluffy friend
 # octopus ----> intelligent sea creature with 8 legs
+
+print(a) 
+list_with_dict = [
+  {'apple': 'fruit', 'carrot': 'vegetable'},
+  {'winter': 'cold', 'summer': 'hot'}
+]
+mixed_list = [
+  [1,2,3],
+  {'one': 1, 'two': 2}
+]
+dict_with_list = {
+  'numbers': [8,5,3],
+  'words': ['hi', 'bye']
+}
+
+dict_with_dict = {
+  'foods': {'apple': 'fruit', 'carrot': 'vegetable'},
+  'seasons': {'winter': 'cold', 'summer': 'warm'}
+}
