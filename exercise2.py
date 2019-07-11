@@ -41,3 +41,17 @@ print(fav_cities['toronto'])
 for artist in fav_artists: 
     print(f'I think {artist} is great!')
 
+# print the first two artists - range 
+print(fav_artists[0:2])
+
+# print when the movie was released 
+for movie, year in fav_movies.items(): 
+    print(f'{movie} came out in {year}')
+
+# sort and reverse list 
+print(list(sorted(siblings_age, reverse = True)))
+
+#add "Beauty and the Beast" to fav_movies with release date 1991 and 2017 
+fav_movies['beauty_and_the_beast'] = [1991, 2017]
+print(fav_movies)
+
