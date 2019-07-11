@@ -26,7 +26,18 @@ fav_cities['toronto'] = 2930000
 
 print(fav_cities)
 
-# print year of one movie 
-print(fav_movies['hulk'])
+# reverse list
+# print(coin_toss[::-1])
 
+# reverse list another way 
+coin_toss.reverse()
+reversed_flip = coin_toss
+print(reversed_flip)
+
+# show the population of a city 
+print(fav_cities['toronto'])
+
+# for artist 
+for artist in fav_artists: 
+    print(f'I think {artist} is great!')
 
