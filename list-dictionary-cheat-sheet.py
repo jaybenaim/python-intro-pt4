@@ -121,3 +121,30 @@ for character_index, character in enumerate("hello"):
 # o
     
 print(a)
+
+my_dictionary = {
+  'python': 'a big snake',
+  'cat': 'a fluffy friend',
+  'sheep': 'looks like a cloud'
+}
+
+my_dictionary['octopus'] = 'intelligent sea creature with 8 legs'
+my_dictionary['octopus'] # 'intelligent sea creature with 8 legs'
+my_dictionary.get('dog', None) # returns None instead of erroring
+my_dictionary.get('cat', None) # returns 'a fluffy friend'
+my_dictionary.pop('sheep') # 'looks like a cloud; a bit smelly''octopus': 'intelligent sea creature with 8 legs'}
+
+
+print(my_dictionary) # {'python': 'a big snake', 'cat': 'a fluffy friend', 'octopus': 'intelligent sea creature with 8 legs'}
+print(a)
+print(my_dictionary.keys()) # dict_keys(['python', 'cat',  'octopus'])
+my_dictionary.values() # dict_values(['a big snake', 'a fluffy friend', 'intelligent sintelligent sea creature with 8 legs'])
+
+print(a)
+
+for key, val in my_dictionary.items():
+  print("{} ----> {}".format(key, val))
+
+# python ----> a big snake
+# cat ----> a fluffy friend
+# octopus ----> intelligent sea creature with 8 legs
