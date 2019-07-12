@@ -40,7 +40,6 @@ for age in siblings_age:
     print(age)
 
 # add two colors to the fav_color list 
-fav_colors.append('yellow')
-fav_colors.append('teal')
+fav_colors.extend(['yellow', 'teal'])
 print(fav_colors)
 
