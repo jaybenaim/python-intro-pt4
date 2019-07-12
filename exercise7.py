@@ -27,18 +27,7 @@ def count_to(number_to_count_to):
     
 print(count_to(50)) # counts to 50 [1, 2, 3, 4, ... ]
 # ------------------------------------------------------------------------------ # 
-def count_to(number_to_count_to): 
-    
-    numbers = [] 
-    counter = 1 
-    while counter <= number_to_count_to: #
-        numbers.append(counter)
-        numbers.append(counter)
-        numbers.append(counter)
-        counter += 1
-    return numbers
-    
-print(count_to(50))
+
 # def make_new_list(list_name): 
 #     new_list = []
 #     for number in list_name: 
@@ -76,6 +65,21 @@ print(count_to(50))
 
 # ------------------------------------------------------------------------------ # 
                             # Exercise 7.5 
+# ------------------------------------------------------------------------------ # 
+def count_to(number_to_count_to): 
+    
+    numbers = [] 
+    counter = 1 
+    while counter <= number_to_count_to: #
+        numbers.append(counter)
+        numbers.append(counter)
+        numbers.append(counter)
+        counter += 1
+    return numbers
+    
+print(count_to(50)) ## CORRECT OUTPUT [1, 1, 1, 2, 2, 2, 3, 3, 3, ... ] 
+# ------------------------------------------------------------------------------ # 
+                            # test 
 # ------------------------------------------------------------------------------ # 
 
 # new_list = []
@@ -130,3 +134,20 @@ print(count_to(50))
 
 
 # print(new_list_three(numbers))
+
+
+# ------------------------------------------------------------------------------ # 
+                            # Exercise 7.6
+# ------------------------------------------------------------------------------ # 
+# print a new list with the countries that are not islands - print both lists 
+countries = [
+    {"name": "canada", "continent": "na", "island": False},
+    {"name": "usa", "continent": "na", "island": False},
+    {"name": "israel", "continent": "asia", "island": False}
+]
+new_new = [] 
+for item in countries: 
+    if item['island'] == False: 
+        new_new.append(item)
+        new_new.append(item['island']) 
+print(new_new)
