@@ -41,9 +41,23 @@ def expand_class(class_list):
         print(student, number) 
 
 # display results 
-expand_class(students)
+# expand_class(students)
 # ----------------------------------------------------------------------------------- 
 # 10.6 - 
 # ----------------------------------------------------------------------------------- e
 
 # Delete the 2nd cohort and redisplay the dictionary.
+# students.pop('cohort2')
+# display_name_and_num(students)
+
+# ----------------------------------------------------------------------------------- 
+# 10.7 - 
+# ----------------------------------------------------------------------------------- 
+
+# get the total number of students in all cohorts using a for loop 
+def get_total_students(dict_name): 
+    for student, number in dict_name.items(): 
+        number += number 
+    return number 
+
+print("The total number of students is: {} ".format(get_total_students(students)))
