@@ -149,9 +149,28 @@ def check_list_for_item(list_name, item):
                  # Exercise 9.4
 # ------------------------------------------------------------------------------ #
 # print the second grocery list item 
-print(grocery_list[2])
+# print(grocery_list[2])
 
 
 # ------------------------------------------------------------------------------ #
-                 # Exercise 9.4
+                 # Exercise 9.5
 # ------------------------------------------------------------------------------ #
+ 
+ # sort grocery list and print list items with an "* " prepended 
+
+# grocery_list.sort()
+# print(print_list(grocery_list))
+
+# ------------------------------------------------------------------------------ #
+                 # Exercise 9.6
+# ------------------------------------------------------------------------------ #
+ 
+ # remove() 
+grocery_list.remove('steak')
+ # pop() 
+grocery_list.pop(0)
+ # del[]
+del grocery_list[0]
+
+print(print_list(grocery_list))
+
